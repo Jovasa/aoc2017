@@ -33,7 +33,8 @@ fn main() {
     println!("Result: {}", result);
 }
 
-fn hash_round(list_len: usize, list: &mut Vec<i32>, current_position: &mut usize, skip_size: &mut usize, lengths: Vec<usize>) {
+
+pub fn hash_round(list_len: usize, list: &mut Vec<i32>, current_position: &mut usize, skip_size: &mut usize, lengths: Vec<usize>) {
     for length in lengths {
         let mut sublist: Vec<i32> = Vec::new();
         for i in 0..length {
