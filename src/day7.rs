@@ -30,8 +30,8 @@ fn get_weight(programs: &HashMap<String, Program>, name: &String) -> i32 {
     }
 
     if weights.len() > 1 {
-        let mut max = weights.iter().max().unwrap().0;
-        let mut min = weights.iter().min().unwrap().0;
+        let max = weights.iter().max().unwrap().0;
+        let min = weights.iter().min().unwrap().0;
         if max != min {
             let max_name = weights.iter().find(|x| x.0 == max).unwrap().1;
             let min_name = weights.iter().find(|x| x.0 == min).unwrap().1;

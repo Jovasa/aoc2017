@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn main() {
     let input = std::fs::read_to_string("data/day10.txt").expect("Unable to read file");
 
